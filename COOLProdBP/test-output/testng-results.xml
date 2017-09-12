@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12841" started-at="2017-09-12T07:22:47Z" finished-at="2017-09-12T07:22:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12841" started-at="2017-09-12T07:22:47Z" finished-at="2017-09-12T07:22:59Z">
+      <class name="com.coolprodbp.tests.COOLProdBPTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.coolprodbp.tests.COOLProdBPTest@7cd62f43]" name="init" is-config="true" duration-ms="4884" started-at="2017-09-12T12:52:47Z" finished-at="2017-09-12T12:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="coolTest()[pri:0, instance:com.coolprodbp.tests.COOLProdBPTest@7cd62f43]" name="coolTest" duration-ms="7532" started-at="2017-09-12T12:52:51Z" finished-at="2017-09-12T12:52:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coolTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.coolprodbp.tests.COOLProdBPTest@7cd62f43]" name="getResult" is-config="true" duration-ms="2" started-at="2017-09-12T12:52:59Z" finished-at="2017-09-12T12:52:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=coolTest status=SUCCESS method=COOLProdBPTest.coolTest()[pri:0, instance:com.coolprodbp.tests.COOLProdBPTest@7cd62f43] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endreport()[pri:0, instance:com.coolprodbp.tests.COOLProdBPTest@7cd62f43]" name="endreport" is-config="true" duration-ms="402" started-at="2017-09-12T12:52:59Z" finished-at="2017-09-12T12:52:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endreport -->
+      </class> <!-- com.coolprodbp.tests.COOLProdBPTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
