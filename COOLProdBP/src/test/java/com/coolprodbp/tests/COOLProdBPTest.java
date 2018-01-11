@@ -35,28 +35,30 @@ public class COOLProdBPTest {
     {
         test = extent.startTest("monitoringTest");        
         test.log(LogStatus.PASS, "Browser started");
-        driver.get("https://cool.podc.sl.edst.ibm.com/cool/ ");
+        driver.get("https://cool.podc.sl.edst.ibm.com/cool/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        
+        Thread.sleep(1000);
         WebElement ele=driver.findElement(By.xpath("//*[@id='ng-mobile-signUp']"));
         String content=ele.getText();
         System.out.println("Create an ID link is :  "+content);
         Assert.assertEquals("Create an IBMid.", content);
         test.log(LogStatus.PASS, "Create an IBMId");
-        
-        boolean searchEmailPresence = driver.findElement(By.xpath("//input[@name='username']")).isDisplayed();
+        Thread.sleep(1000);
+        ele.click();
+        Thread.sleep(3000);
+        boolean searchEmailPresence = driver.findElement(By.xpath("//input[@name='emailAddress']")).isDisplayed();
               
         if (searchEmailPresence==true)
         {
-        	WebElement email=driver.findElement(By.xpath("//a[@id='continuebutton']"));
+        	WebElement email=driver.findElement(By.xpath("//button[@id='continueButton']"));
         	email.click();        	
         }    
        
-        WebElement elem=driver.findElement(By.xpath("//div[@id='msgibmid']"));
+        WebElement elem=driver.findElement(By.xpath("//span[contains(text(),'Email is required')]"));
         String alert=elem.getText();
         System.out.println("Alert Content is :  "+alert);
-        Assert.assertEquals("IBMid or email is required", alert);
+        Assert.assertEquals("Email is required", alert);
         test.log(LogStatus.PASS, "Email required alert content");
         
         
